@@ -301,10 +301,10 @@ This laboratory is intended strictly for education purposes only.
 
 # 👤 Author
 
-**Oluwsegun Olamilekan**\
+**Oluwasegun Olamilekan a.k.a Rey**\
 DFIR|Cybersecurity Professional B084
 
-LinkedIn: (https://www.linkedin.com/in/oluwasegun-olamilekan/)
+LinkedIn: [https://www.linkedin.com/in/oluwasegun-olamilekan-60a515244?utm_source=share_via&utm_content=profile&utm_medium=member_android]
 
 ---
 
