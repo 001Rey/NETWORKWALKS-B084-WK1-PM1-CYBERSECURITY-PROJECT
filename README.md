@@ -221,6 +221,8 @@ DNS:
 
 These are the challenges i encountered while wokring through all of these.
 
+```
+
 ## Problem 1. Internet Connectivity After Static IP Configuration
 
 After manually configuring the IPv4 settings, the Network configuration i made on the virtual box did not reflect in the kali linux lab.
@@ -230,7 +232,7 @@ I reconfigured the virtual machine's netwpork adapter by attaching it to "NAT NE
 
 
 ```
-
+```
 The network connection was then restarted/rebooted and connectivity was tested again.
 
 ---
