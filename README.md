@@ -230,9 +230,6 @@ After manually configuring the IPv4 settings, the Network configuration i made o
 Solution: 
 I reconfigured the virtual machine's netwpork adapter by attaching it to "NAT NETWORK". It was initially attached to "NAT".
 
-
-```
-```
 The network connection was then restarted/rebooted and connectivity was tested again.
 
 ---
@@ -307,7 +304,7 @@ This laboratory is intended strictly for education purposes only.
 **Oluwsegun Olamilekan**\
 DFIR|Cybersecurity Professional B084
 
-LinkedIn: [https://www.linkedin.com/in/waqaskarim/](https://www.linkedin.com/in/oluwasegun-olamilekan/)
+LinkedIn: (https://www.linkedin.com/in/oluwasegun-olamilekan/)
 
 ---
 
