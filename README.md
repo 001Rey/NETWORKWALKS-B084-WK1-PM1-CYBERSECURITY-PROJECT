@@ -195,7 +195,7 @@ The home page of my kali linux lab.
 
 | ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
 | ----------------------------- | ------------------------------- | ------------------------------- |
-| 🌐 Check IP address           | `ip a`                          | Correct Kali IP displayed       |
+| 🌐 Check IP address           | `ip addr`                          | Correct Kali IP displayed       |
 | 📡 Test gateway               | `ping 10.0.0.1`                 | Successful replies              |
 | 🌍 Test Internet connectivity | `ping 8.8.8.8`                  | Successful replies              |
 | 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
@@ -225,12 +225,11 @@ These are the challenges i encountered while wokring through all of these.
 
 ## Problem 1. Internet Connectivity After Static IP Configuration
 
-After manually configuring the IPv4 settings, the Network configuration i made on the virtual box did not reflect in the kali linux lab.
+After manually configuring IPv4 settings, the network configuration did not behave as expected inside Kali Linux.
 
-Solution: 
-I reconfigured the virtual machine's netwpork adapter by attaching it to "NAT NETWORK". It was initially attached to "NAT".
+Troubleshooting performed: I changed the VM's network attachment from standard NAT to the dedicated NatNetwork NAT Network and restarted the network connection/VM.
 
-The network connection was then restarted/rebooted and connectivity was tested again.
+This corrected the network attachment configuration. The final IP address, gateway, and DNS connectivity should be verified independently.
 
 ---
 
