@@ -146,7 +146,7 @@ The VM was allocated:
 ```text
 RAM:6234 MB
 ```
-![](KALI-LINUX.png)
+
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 
 
@@ -165,7 +165,7 @@ Subnet Mask: 255.255.255.0
 Gateway: 10.0.0.1
 DNS: 8.8.8.8
 ```
-
+![](NETWORK.png)
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
 
 
@@ -180,12 +180,15 @@ Snapshot Name:
 ```text
 Wyvern's base 
 ```
-
+![](SNAPSHOT.png)
 The snapshot represents the clean baseline of my laboratory.
 
 If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
 
+## LAB HOME PAGE
+![](HOME.png)
 
+The home page of my kali linux lab.
 ---
 
 # 🔎 Lab Verification
@@ -216,21 +219,19 @@ DNS:
 
 # 🐞 Problems Encountered & Solutions
 
-Documenting problems is an important part of the project.
+These are the challenges i encountered while wokring through all of these.
 
 ## Problem 1. Internet Connectivity After Static IP Configuration
 
-After manually configuring the IPv4 settings, Internet connectivity may fail depending on the Kali/NetworkManager configuration.
+After manually configuring the IPv4 settings, the Network configuration i made on the virtual box did not reflect in the kali linux lab.
 
-One workaround used during this lab was:
+Solution: 
+I reconfigured the virtual machine's netwpork adapter by attaching it to "NAT NETWORK". It was initially attached to "NAT".
 
-```bash
-sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+
 ```
 
 The network connection was then restarted/rebooted and connectivity was tested again.
-
-> **Important:** Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an `nmcli` command.
 
 ---
 
